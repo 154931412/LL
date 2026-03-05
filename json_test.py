@@ -24,9 +24,11 @@
 import json
 
 data = {"items": [1, 2, 3], "ok": True}
-with open("git_01/LL/data.json", "w", encoding="utf-8") as f:
+with open("LL/data.json", "w", encoding="utf-8") as f:
     json.dump(data, f, ensure_ascii=False, indent=2)
 
-with open("git_01/LL/data.json", "r", encoding="utf-8") as f:
+print(data)
+
+with open("LL/data.json", "r", encoding="utf-8") as f:
     obj = json.load(f)
 print(obj)
